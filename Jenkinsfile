@@ -1,9 +1,9 @@
 pipeline{
     agent 
-    docker{
-        image 'cypress/browsers:lastest'
-        args '--entrypoint='
-    }
+        docker{
+            image 'cypress/browsers:lastest'
+            args '--entrypoint='
+        }
     stages{
         stage('test1'){ 
             steps{
